@@ -14,6 +14,8 @@ Configure Avatax by using `AvataxProvider`. You can choose to supply username/pa
 
 E.g. Sandbox environment using usernam/password
 ```js
+angular.module('app').config(AppConfig);
+
 /* @ngInject */
 function AppConfig(AvataxProvider) {
   AvataxProvider.init({
@@ -26,7 +28,6 @@ function AppConfig(AvataxProvider) {
 
 E.g. Production environment using accountId/licenseKey
 ```js
-
 angular.module('app').config(AppConfig);
 
 /* @ngInject */
