@@ -4,6 +4,25 @@ Angular Avatax API
 
 Unofficial Angular service to communicate with [Avalara Avatax API](https://sandbox-rest.avatax.com/swagger/ui/)
 
+## Installation
+
+**Bower**
+
+```bash
+bower install --save angular-avatax
+```
+**npm**
+
+```bash
+npm install --save angular-avatax
+```
+
+**yarn**
+
+```bash
+yarn add angular-avatax
+```
+
 ## Usage
 
 Include avalara into your angular module
