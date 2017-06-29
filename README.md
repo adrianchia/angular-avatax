@@ -1,6 +1,7 @@
 Angular Avatax API
 ==================
 [![Build Status](https://travis-ci.org/adrianchia/angular-avatax.svg?branch=master)](https://travis-ci.org/adrianchia/angular-avatax)
+[![Coverage Status](https://coveralls.io/repos/github/adrianchia/angular-avatax/badge.svg?branch=master)](https://coveralls.io/github/adrianchia/angular-avatax?branch=master)
 
 Unofficial Angular service to communicate with [Avalara Avatax API](https://sandbox-rest.avatax.com/swagger/ui/)
 
