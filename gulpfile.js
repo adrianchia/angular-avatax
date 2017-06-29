@@ -8,22 +8,17 @@ var del = require('del');
 var gutil = require('gulp-util');
 var rename = require('gulp-rename');
 var eslint = require('gulp-eslint');
+var Server = require('karma').Server;
 
 gulp.task('clean', function() {
   del(['coverage','dist']);
 });
 
 gulp.task('test', function(done) {
-  const child_process = require('child_process');
-  child_process.exec('./node_modules/.bin/karma start karma.conf.js', (err, stdout) => {
-    gutil.log(stdout);
-
-    if(err) {
-      throw new Error(err);
-    } else {
-      done();
-    }
-  });
+  new Server({
+    configFile: __dirname + '/karma.conf.js',
+    singleRun: true
+  }, done).start();
 });
 
 gulp.task('lint', function() {
